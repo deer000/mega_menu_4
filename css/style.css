@@ -1,0 +1,87 @@
+@charset "UTF-8"
+
+:root {
+	font-size: 16px;
+	clear: fixed;
+}
+#wrapper_1,
+#wrapper_1:after,
+#wrapper_1:before {
+		clear: both;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background: beige;
+}
+
+.logo {
+	width: 200px;
+	height: 100%;
+	float: left;
+	background: gold;
+}
+
+.nav {
+	width: 800px;
+	height: 100%;
+	padding: 50px 20px 0;
+	float: left;
+}
+
+.nav_1 {
+	float: right;
+}
+
+.nav_1 a {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px;
+	float: left;
+	background: silver;
+}
+
+.nav_1 a:hover {
+	background: #333;
+}
+.nav ul {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 100%;
+	left: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	background: silver;
+}
+
+.nav_1 a:hover~ul {
+	height: 200px;
+}
+.nav ul li {
+	display: inline-block;
+	width: 100px;
+	height: 200px;
+	float:left;
+}
+
+.nav ul li:first-child {
+	margin-left: 580px;
+}
